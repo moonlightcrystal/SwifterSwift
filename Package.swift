@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwifterSwift",
+    name: "SwifterSwiftFork",
     platforms: [
         .iOS(.v10),
         .tvOS(.v9),
@@ -16,12 +16,5 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(name: "SwifterSwift", dependencies: []),
-        .testTarget(
-            name: "SwifterSwiftTests", 
-            dependencies: ["SwifterSwift"], 
-            path: "Tests", 
-            exclude: ["Info.plist"], 
-            resources: [.process("ResourcesTests")]
-        )
+        .target(name: "SwifterSwift", dependencies: [])
     ])
